@@ -46,10 +46,10 @@ public class GiftsActivity extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
-                                EditText etMessage = (EditText) inflater.findViewById(R.id.tvDialogPopUp);
+                              //  EditText etMessage = (EditText) inflater.findViewById(R.id.tvDialogPopUp);
 
                                 String line="This item USB was purchased at Take a lot will be delivered to the address of 34 Hill Street Pretoria";
-                                etMessage.setText(line);
+                             //   etMessage.setText(line);
                                 Toast.makeText(GiftsActivity.this,"This item USB was purchased at Take a lot will be delivered to the address of 34 Hill Street Pretoria",Toast.LENGTH_SHORT).show();
                             }
                         }
