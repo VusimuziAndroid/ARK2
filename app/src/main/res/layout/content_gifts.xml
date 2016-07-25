@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_gifts" tools:context="android.apk.GiftsActivity"
+    android:id="@+id/radWoolworths"
+    android:background="#ff2f2f">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GIFTS"
+        android:id="@+id/tvGifts"
+        android:layout_marginLeft="1dp"
+        android:textStyle="bold"
+        android:layout_marginStart="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radOmni"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/tvGifts"
+        android:layout_alignStart="@+id/tvGifts"
+        android:text="Omni"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Woolworths"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/radOmni"
+        android:layout_alignStart="@+id/radOmni"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a lot"
+        android:id="@+id/radTakeALot"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Stores"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/tvGifts"
+        android:layout_alignStart="@+id/radOmni"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Items"
+        android:id="@+id/tvItems"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/radOmni"
+        android:textColor="#ffffff"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radBreakfast"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvItems"
+        android:layout_alignStart="@+id/tvItems"
+        android:text="Breakfast"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lunch"
+        android:id="@+id/radLunch"
+        android:layout_below="@+id/radBreakfast"
+        android:layout_alignStart="@+id/radBreakfast"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USB"
+        android:id="@+id/radUSB"
+        android:layout_below="@+id/radLunch"
+        android:layout_alignStart="@+id/radLunch"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Customer Details"
+        android:id="@+id/textView3"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/radUSB"
+        android:layout_alignStart="@+id/radUSB" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="45dp"
+        android:layout_alignParentStart="true"
+        android:hint="Home or Work Address"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/button"
+        android:background="@drawable/gradient_button_bg_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView3"
+        android:onClick="onClickPopUp" />
+
+
+    <!-- <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignStart="@+id/tvGifts"
+         android:layout_below="@+id/tvGifts">
+
+         <Spinner android:id="@+id/stores"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="34dp"
+             android:drawSelectorOnTop="true"
+             android:entries="@+id/Stores"/>
+         <Spinner android:id="@+id/items"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="34dp"
+             android:drawSelectorOnTop="true"
+             android:entries="@+id/Items"/>
+     </LinearLayout> -->
+</RelativeLayout>

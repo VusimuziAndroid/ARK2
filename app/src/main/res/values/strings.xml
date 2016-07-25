@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome_screen">WelcomeScreen</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_customer_details">Category Types</string>
+    <string name="title_activity_health">HealthActivity</string>
+    <string name="title_activity_moments">Categories of Moments</string>
+    <string-array name="Stores">
+        <item>Omni</item>
+        <item>Woolworths</item>
+        <item>Take a lot</item>
+    </string-array>
+    <string-array name="Items">
+        <item>USB</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_bond">BondActivity</string>
+    <string name="title_activity_gifts">GiftsActivity</string>
+    <string name="title_activity_login2">Login2</string>
+</resources>

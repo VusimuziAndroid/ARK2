@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".HomeActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <menu
+        android:background="@drawable/gradient_bg_color" >
+
+        <item android:id="@+id/home2" android:title="HOME" android:orderInCategory="100"
+            app:showAsAction="always"   android:icon="@drawable/ic_home_white_48dp"></item>
+        <item android:id="@+id/moments" android:title="MOMENTS " android:orderInCategory="100"
+            app:showAsAction="always" android:icon="@drawable/ic_person_white_48dp"></item>
+        <item android:id="@+id/gifts" android:title="GIFTS " android:orderInCategory="100"
+            app:showAsAction="always" android:icon="@drawable/ic_person_add_white_48dp"></item>
+        <!--   <item android:id="@+id/sharePic" android:title="SHARE PICTURE" android:orderInCategory="100"
+               app:showAsAction="always" android:icon="@drawable/content_attachment"></item> -->
+        <item android:id="@+id/logout" android:title="LOGOUT " android:orderInCategory="100"
+            app:showAsAction="always" android:icon="@drawable/ic_notifications_white_48dp"></item>
+
+
+    </menu>
+</menu>
